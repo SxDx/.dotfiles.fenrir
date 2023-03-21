@@ -1,0 +1,46 @@
+[colour]
+    ui = true
+[alias]
+    co = checkout
+    nb = checkout -b
+    pl = pull
+    ps = push
+    s = status
+	b = branch
+    l = log --graph --date=short
+    changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
+    shortlog = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
+    changelog = log --pretty=format:\" * %s\"
+	dt= difftool
+	cm = commit -m
+[user]
+	email = r.koller@me.com
+	name = René Koller
+[pull]
+	rebase = false
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[merge]
+	tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+	keepBackup = false
+[diff]
+	tool = Kaleidoscope
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	ignorecase = false
+	excludesfile = /Users/renek/.gitignore
+[init]
+	defaultBranch = main
+[protocol]
+	version = 2

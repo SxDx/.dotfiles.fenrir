@@ -1,0 +1,93 @@
+format = """
+$username\
+$hostname\
+$shlvl\
+$directory\
+$vcsh\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+\n\
+$hg_branch\
+$docker_context\
+$package\
+$cmake\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$golang\
+$helm\
+$java\
+$julia\
+$kotlin\
+$nim\
+$nodejs\
+$ocaml\
+$perl\
+$php\
+$purescript\
+$python\
+$red\
+$ruby\
+$rust\
+$scala\
+$swift\
+$terraform\
+$vlang\
+$vagrant\
+$zig\
+$nix_shell\
+$conda\
+$memory_usage\
+$aws\
+$gcloud\
+$kubernetes\
+$openstack\
+$env_var\
+$crystal\
+$custom\
+$cmd_duration\
+$line_break\
+$lua\
+$jobs\
+$battery\
+$time\
+$status\
+$shell\
+$character"""
+
+
+[python]
+python_binary = "python3"
+symbol = "\\[py\\]"
+format = "[$symbol($version )]($style)"
+
+[ruby]
+symbol = "\\[rb\\]"
+format = "[$symbol($version )]($style)"
+
+[nodejs]
+symbol = "\\[js\\]"
+format = "[$symbol($version )]($style)"
+
+[gcloud]
+symbol = "\\[gc\\]"
+format = "on [$symbol$project]($style) "
+
+[kubernetes]
+symbol = "\\[k8s\\]"
+format ='[$symbol$context( \($namespace\))]($style) '
+disabled = false
+
+[git_branch]
+symbol = ""
+
+[kubernetes.context_aliases]
+"dev.local.cluster.k8s" = "dev"
+"gke_danni-278921_europe-west4-b_danni" = "danni"
+"gke_removebg-226919_europe-west4-b_removebg-app" = "remove.bg"
