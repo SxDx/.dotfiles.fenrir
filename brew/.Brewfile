@@ -14,7 +14,7 @@ brew "git"
 brew "git-lfs"
 brew "starship"
 brew "stow"
-brew "ngrok"
+cask "ngrok"
 
 
 # Image Tools
