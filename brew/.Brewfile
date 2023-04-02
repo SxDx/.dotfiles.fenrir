@@ -31,6 +31,7 @@ cask "arc"
 cask "raycast"
 cask "secretive"
 cask "mimestream"
+cask "hyperkey"
 brew "iconsur"
 
 # Dev environment

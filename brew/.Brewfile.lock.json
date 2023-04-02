@@ -2,13 +2,13 @@
   "entries": {
     "tap": {
       "homebrew/bundle": {
-        "revision": "dbbb757e2257fe878418c1f0656b9e4cd3ce4762"
+        "revision": "66e44ea4d5236ecceb143b895e1c5a3add133db4"
       },
       "homebrew/cask": {
         "revision": "1983d4fbf3e8f449ae74541862df6afac82029f4"
       },
       "homebrew/cask-fonts": {
-        "revision": "6ba72e5dc5ce9ea438a82c3d1dc24b48e467d597"
+        "revision": "5f6332381f66d34051de3cedb2d5039acf22c53f"
       }
     },
     "brew": {
@@ -343,15 +343,15 @@
         }
       },
       "rabbitmq": {
-        "version": "3.11.11",
+        "version": "3.11.13",
         "bottle": {
           "rebuild": 0,
           "root_url": "https://ghcr.io/v2/homebrew/core",
           "files": {
             "all": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/rabbitmq/blobs/sha256:6f37cdde49c9501595e94ca71894a1efd8f104b53412ce2b0412e21983b1c812",
-              "sha256": "6f37cdde49c9501595e94ca71894a1efd8f104b53412ce2b0412e21983b1c812"
+              "url": "https://ghcr.io/v2/homebrew/core/rabbitmq/blobs/sha256:1debb0e65cd2122781f3816a766c3eb5ae7ac3dbca408f9210529f082a717bdf",
+              "sha256": "1debb0e65cd2122781f3816a766c3eb5ae7ac3dbca408f9210529f082a717bdf"
             }
           }
         },
@@ -977,7 +977,7 @@
     },
     "cask": {
       "visual-studio-code": {
-        "version": "1.76.2",
+        "version": "1.77.0",
         "options": {
           "full_name": "visual-studio-code"
         }
@@ -1019,13 +1019,13 @@
         }
       },
       "arc": {
-        "version": "0.95.1,37921",
+        "version": "0.96.0,38004",
         "options": {
           "full_name": "arc"
         }
       },
       "raycast": {
-        "version": "1.49.0",
+        "version": "1.49.1",
         "options": {
           "full_name": "raycast"
         }
@@ -1076,6 +1076,12 @@
         "version": "3.2.2,dRdWsQNE9tG,a",
         "options": {
           "full_name": "ngrok"
+        }
+      },
+      "hyperkey": {
+        "version": "0.22",
+        "options": {
+          "full_name": "hyperkey"
         }
       }
     }
