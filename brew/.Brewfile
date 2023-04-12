@@ -48,6 +48,8 @@ brew "yarn"
 brew "pkg-config"
 brew "pcre"
 brew "python"
+brew "gpg"
+cask "docker"
 
 # GCP
 cask "google-cloud-sdk"
